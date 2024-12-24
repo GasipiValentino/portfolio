@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Label from '../components/Label.astro';
+import IntroSocial from '../components/IntroSocial.astro';
+import Linkedin from '../components/icons/Linkedin.astro';
+import Github from '../components/icons/Github.astro';
+import Bento from '../components/icons/Bento.astro';
 ---
 
 <Layout>
@@ -11,7 +15,27 @@ import Label from '../components/Label.astro';
 			<h1 class="text-white text-4xl font-bold flex flex-row gap-x-4 items-center pb-4">Hey, I'm Valentino <div class="text-lg">
 				<Label>Available for hire</Label>	
 			</div></h1>
-		<h2 class="text-xl opacity-80">2 years of experience designing and developing websites while continuously learning new technologies. I focus on providing modern, responsive (mobile-first) designs. I also have knowledge in IoT (Internet of Things), Digital Marketing, Servers, and Data Analysis.</h2>
+		<h2 class="text-2xl  text-wrap"><span class="text-blue-300">2 years of experience</span> 
+		<span class="opacity-80">designing and developing websites while continuously learning new technologies. I focus on providing</span> <span class="text-blue-300 opacity-100">modern and responsive (mobile-first) designs.</span>
+		</h2>
+
+		<nav class="flex gap-4 mt-4">
+				<IntroSocial href="https://www.linkedin.com/in/valentino-gasipi-470100252/">
+					<Linkedin/>
+					LinkedIn
+				</IntroSocial>
+
+				<IntroSocial href="https://github.com/GasipiValentino">
+					<Github/>
+					GitHub
+				</IntroSocial>
+
+				<IntroSocial href="">
+					<Bento/>
+					Bento
+				</IntroSocial>
+		</nav>
+
 		</section>
 	</main>
 </Layout>
