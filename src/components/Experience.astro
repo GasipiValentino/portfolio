@@ -1,0 +1,25 @@
+---
+import ExperienceItems from "./ExperienceItems.astro"
+
+const experience = [
+    {
+        title: 'Mancruz - Dogos de Burdeos',
+        date: 'Febrero 2024',
+        description: 'All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.',
+        link: 'https://mancruz.org/'
+    }
+]
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">     
+    
+    {
+        experience.map((experience) => (
+             <li class="mb-10 ms-6">            
+                <ExperienceItems {...experience} />
+            </li>
+        ))
+    }
+</ol>
+
