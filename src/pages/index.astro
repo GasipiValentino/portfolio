@@ -6,12 +6,14 @@ import Linkedin from '../components/icons/Linkedin.astro';
 import Github from '../components/icons/Github.astro';
 import Bento from '../components/icons/Bento.astro';
 import Mail from '../components/icons/Mail.astro';
+import Suitcase from '../components/icons/Suitcase.astro';
 import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
 <Layout title="Porfolio de Valentino Gasipi - Desarrollador y Programador Web con 2 años de experiencia" description="">
 	<main>
-		<section class="w-11/12 lg:w-[740px] mx-auto  py-20">
+		<SectionContainer>
 			<img src="yo.jpeg" alt="Valentino Gasipi Falabella" class="rounded-full size-24 mb-4">
 
 			<h1 class="text-white text-4xl font-bold flex flex-row gap-x-4 items-center pb-4">Hey, I'm Valentino <div class="text-lg">
@@ -37,16 +39,19 @@ import Experience from '../components/Experience.astro';
 					Bento
 				</IntroSocial>
 
-				<IntroSocial href="https://bento.me/valen-gasipi">
+				<IntroSocial href="mailto:valentinogasipi@gmail.com">
 					<Mail/>
 					valentinogasipi@gmail.com
 				</IntroSocial>
 		</nav>
 
-		</section>
+	</SectionContainer>
 
-		<section>
+		<SectionContainer>
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+				<Suitcase class=""/>
+				Experiencia Laboral</h2>
 			<Experience/>
-		</section>
+		</SectionContainer>
 	</main>
 </Layout>
