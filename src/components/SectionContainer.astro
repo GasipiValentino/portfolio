@@ -1,3 +1,7 @@
-<section class="w-11/12 lg:w-[740px] mx-auto py-12">
+---
+const { id } = Astro.props
+---
+
+<section id={id} data-section={id} class="w-11/12 lg:w-[740px] mx-auto py-12">
     <slot/>
 </section>
