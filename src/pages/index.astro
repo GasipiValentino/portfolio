@@ -9,38 +9,42 @@ import Mail from '../components/icons/Mail.astro';
 import Suitcase from '../components/icons/Suitcase.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import Projects from '../components/Projects.astro';
+import  Code  from '../components/icons/Code.astro';
 ---
 
-<Layout title="Porfolio de Valentino Gasipi - Desarrollador y Programador Web con 2 años de experiencia" description="">
+<Layout title="Porfolio de Valentino Gasipi - Desarrollador y Programador Web con 2 años de experiencia" description="2 years designing and developing websites while continuously learning new technologies. I focus on providing modern and responsive (mobile-first) designs.">
 	<main>
 		<SectionContainer id="home">
-			<img src="yo.jpeg" alt="Valentino Gasipi Falabella" class="rounded-full size-24 mb-4">
+		<div class="flex flex-row items-center gap-4 mb-4">
+			<img src="yo.jpeg" alt="Valentino Gasipi Falabella" class="rounded-full size-24">
 
-			<h1 class="text-white text-4xl font-bold flex flex-row gap-x-4 items-center pb-4">Hey, I'm Valentino <div class="text-lg">
-				<Label>Available for hire</Label>	
-			</div></h1>
-		<h2 class="text-2xl  text-wrap"><span class="text-blue-300">2 years of experience</span> 
+			<article class="">
+				<Label>Available for hire</Label>
+			  </article>
+		</div>
+		<h2 class="text-xl md:text-2xl  text-wrap"><span class="text-blue-300">2 years</span> 
 		<span class="opacity-80">designing and developing websites while continuously learning new technologies. I focus on providing</span> <span class="text-blue-300 opacity-100">modern and responsive (mobile-first) designs.</span>
 		</h2>
 
-		<nav class="flex gap-6 mt-4">
+		<nav class="flex gap-2 mt-4 flex-wrap justify-center md:justify-start md:gap-6">
 				<IntroSocial href="https://www.linkedin.com/in/valentino-gasipi-470100252/">
-					<Linkedin/>
+					<Linkedin class="size-5 md:size-7"/>
 					LinkedIn
 				</IntroSocial>
 
 				<IntroSocial href="https://github.com/GasipiValentino">
-					<Github/>
+					<Github class="size-5 md:size-7"/>
 					GitHub
 				</IntroSocial>
 
 				<IntroSocial href="https://bento.me/valen-gasipi">
-					<Bento/>
+					<Bento class="size-5 md:size-7"/>
 					Bento
 				</IntroSocial>
 
 				<IntroSocial href="mailto:valentinogasipi@gmail.com">
-					<Mail/>
+					<Mail class="size-5 md:size-7"/>
 					valentinogasipi@gmail.com
 				</IntroSocial>
 		</nav>
@@ -52,6 +56,13 @@ import SectionContainer from '../components/SectionContainer.astro';
 				<Suitcase class=""/>
 				Work Experience</h2>
 			<Experience/>
+		</SectionContainer>
+
+		<SectionContainer id="projects">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-2 items-center">
+				<Code class="size-6"/>
+				Projects</h2>
+				<Projects/>
 		</SectionContainer>
 	</main>
 </Layout>

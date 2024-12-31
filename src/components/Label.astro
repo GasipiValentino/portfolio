@@ -1,5 +1,10 @@
-<a href="https://www.linkedin.com/in/valentino-gasipi-470100252/" target="_blank" rel="noopener" class="bg-sky-100 text-sky-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-sky-400 border border-sky-400">
-
-    
-    <slot></slot>
-</a>
+<div class="flex items-center">
+    <span class="relative inline-flex overflow-hidden rounded-full p-[1px]">
+      <span
+        class="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#4A90E2_0%,#1C3D5A_50%,#4A90E2_100%)]"
+      ></span>
+      <div class="inline-flex items-center justify-center w-full px-3 py-1 text-sm text-blue-800 bg-blue-100 rounded-full cursor-pointer dark:bg-gray-800 dark:text-white/80 backdrop-blur-3xl whitespace-nowrap">
+        <slot />
+      </div>
+    </span>
+</div>
