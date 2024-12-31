@@ -18,8 +18,8 @@ const {description} = Astro.props
 		<title>{title}</title>
 	</head>
 	<body class="">
-		<!-- <div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> -->
-		<div class="absolute top-0 z-[-1] h-screen w-screen bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] dark:block"></div>
+		<div class="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] block"></div>
+		<div class="absolute top-0 z-[-1] h-screen w-screen bg-black bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] hidden dark:block"></div>
 		<Header />
 		<slot />
 		<Footer/>
@@ -41,6 +41,7 @@ const {description} = Astro.props
 html{
 	font-family: 'Onest Variable';
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body{
