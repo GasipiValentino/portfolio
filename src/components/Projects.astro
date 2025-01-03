@@ -7,6 +7,7 @@ import Laravel from "./icons/Laravel.astro"
 import JavaScript from "./icons/JavaScript.astro"
 import Vue from "./icons/Vue.astro"
 import Bootstrap from "./icons/Bootstrap.astro"
+import Vuetify from "./icons/Vuetify.astro"
 
 
 const TAGS = {
@@ -35,10 +36,15 @@ const TAGS = {
     class: "bg-[#1E40AF] text-white",
     icon: Bootstrap,
   },
+  VUETIFY: {
+    name: "Vuetify",
+    class: "bg-[#1E40AF] text-white",
+    icon: Vuetify,
+  }
 }
 const PROJECTS = [
   {
-    title: "Old Money - A Laravel Project",
+    title: "'Old Money' - A Laravel Project",
     description:
       "This project is an E-commerce platform built with Laravel, and Tailwind CSS. It uses Eloquent ORM for the management of the databse. It has a shopping cart, checkout, and admin panel, in which you can manage products, orders, and users.",
     link: "#",
@@ -46,11 +52,31 @@ const PROJECTS = [
     image: "/projects/old-money.jpg",
     button: "Soon...",
     tags: [TAGS.LARAVEL, TAGS.TAILWIND],
+  },
+  {
+    title: "'De Película' - A Vue Project",
+    description:
+      "This project uses the Vue framework and Vuetify for the UI. It consumes the TMDB API to show the latest movies, and TV shows. It has a search bar, and a detail page for each movie. You can also add them to favorites and filter by popularity.",
+    link: "https://peliculas-rho.vercel.app/",
+    github: "https://github.com/GasipiValentino/peliculas-vue",
+    image: "/projects/de-pelicula.jpg",
+    button: "Preview",
+    tags: [TAGS.VUE, TAGS.VUETIFY],
+  },
+  {
+    title: "'JS Cart' - A JavaScript Project",
+    description:
+      "This project aims to model and understand how a shopping cart works. A sneaker e-commerce was created using only Vanilla JavaScript for DOM event handling. The page is characterized by its dynamic loading.",
+    link: "gasipivalentino.github.io/cart-js/",
+    github: "https://github.com/GasipiValentino/cart-js",
+    image: "/projects/js-cart.jpg",
+    button: "Preview",
+    tags: [TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
   }
 ]
 ---
 
-<div class="flex flex-col gap-y-16">
+<div class="flex flex-col gap-y-16 ">
   {
     PROJECTS.map(({ image, title, description, tags, link, github, button }) => (
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
@@ -60,7 +86,7 @@ const PROJECTS = [
     </div>
   </div>
 
-  <div class="w-full md:w-1/2 md:max-w-lg">
+  <div class="w-full md:w-1/2 md:max-w-xl">
     <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
       {title}
     </h3>
