@@ -12,6 +12,8 @@ import SectionContainer from '../components/SectionContainer.astro';
 import Projects from '../components/Projects.astro';
 import  Code  from '../components/icons/Code.astro';
 import SectionTitle from '../components/SectionTitle.astro';
+import About from '../components/icons/About.astro';
+import AboutMe from '../components/AboutMe.astro';
 ---
 
 <Layout title="Porfolio de Valentino Gasipi - Desarrollador y Programador Web con 2 años de experiencia" description="2 years designing and developing websites while continuously learning new technologies. I focus on providing modern and responsive (mobile-first) designs.">
@@ -67,6 +69,13 @@ import SectionTitle from '../components/SectionTitle.astro';
 				<Code class="size-6"/>
 				Projects</SectionTitle>
 				<Projects/>
+		</SectionContainer>
+
+		<SectionContainer id="about-me">
+			<SectionTitle>
+				<About class="size-6"/>
+				About Me</SectionTitle>
+				<AboutMe/>
 		</SectionContainer>
 	</main>
 </Layout>
