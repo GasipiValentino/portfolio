@@ -1,33 +1,42 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro"
+import LinkNav from "./LinkNav.astro"
+import { getRelativeLocaleUrl } from 'astro:i18n'
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import LanguageToggle from '../components/LanguageToggle.astro';
 
-const navItems = [
-{
-    title: "Home",
-    label: "home",
-    url: "/#home",
-  },
-  {
-    title: "Experience",
-    label: "experience",
-    url: "/#experience",
-  },
-  {
-    title: "Projects",
-    label: "projects",
-    url: "/#projects",
-  },
-  {
-    title: "About Me",
-    label: "about-me",
-    url: "/#about-me",
-  },
-  {
-    title: "Contact",
-    label: "contact",
-    url: "mailto:valentinogasipi@gmail.com",
-  },
-]
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+
+// const navItems = [
+//   {
+//     label: 'nav.home', // Clave de traducción
+//     ariaLabel: 'home',
+//     url: '/#home',
+//   },
+//   {
+//     label: 'nav.experiencia',
+//     ariaLabel: 'experiencia',
+//     url: '/#experiencia',
+//   },
+//   {
+//     label: 'nav.proyectos',
+//     ariaLabel: 'proyectos',
+//     url: '/#proyectos',
+//   },
+//   {
+//     label: 'nav.sobre-mi',
+//     ariaLabel: 'sobre-mi',
+//     url: '/#sobre-mi',
+//   },
+//   {
+//     label: 'nav.contacto',
+//     ariaLabel: 'contacto',
+//     url: 'mailto:valentinogasipi@gmail.com',
+//   },
+// ];
+
 ---
 
 <header
@@ -36,18 +45,13 @@ const navItems = [
   <nav
     class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center"
   >
-    {
-      navItems.map((link) => (
-        <a
-          class="relative block px-2 py-2 transition hover:text-blue-500 dark:hover:text-blue-500 hover:cursor-pointer"
-          aria-label={link.label}
-          href={link.url}
-        >
-          {link.title}
-        </a>
-      ))
-    }
+    <LinkNav href={getRelativeLocaleUrl(lang ?? '', '')}>{t('nav.home')}</LinkNav>
+    <LinkNav href={getRelativeLocaleUrl(lang ?? '', '/#experience')}>{t('nav.experience')}</LinkNav>
+    <LinkNav href={getRelativeLocaleUrl(lang ?? '', '/#projects')}>{t('nav.projects')}</LinkNav>
+    <LinkNav href={getRelativeLocaleUrl(lang ?? '', '/#about-me')}>{t('nav.about-me')}</LinkNav>
+    <LinkNav href="mailto:valentinogasipi@gmail.com">{t('nav.contact')}</LinkNav>
     <ThemeToggle />
+    <LanguageToggle />
   </nav>
 </header>
 
