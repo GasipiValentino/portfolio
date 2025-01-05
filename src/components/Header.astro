@@ -49,9 +49,9 @@ const t = useTranslations(lang);
     <LinkNav href={getRelativeLocaleUrl(lang ?? '', '/#experience')}>{t('nav.experience')}</LinkNav>
     <LinkNav href={getRelativeLocaleUrl(lang ?? '', '/#projects')}>{t('nav.projects')}</LinkNav>
     <LinkNav href={getRelativeLocaleUrl(lang ?? '', '/#about-me')}>{t('nav.about-me')}</LinkNav>
-    <LinkNav href="mailto:valentinogasipi@gmail.com">{t('nav.contact')}</LinkNav>
+    <LinkNav href="mailto:valentinogasipi@gmail.com" >{t('nav.contact')}</LinkNav>
     <ThemeToggle />
-    <LanguageToggle />
+    <LanguageToggle/>
   </nav>
 </header>
 
@@ -105,7 +105,7 @@ const t = useTranslations(lang);
   }
 
   nav {
-    @apply dark:bg-gray-800/90 bg-white/50;
+    @apply dark:bg-gray-600/90 bg-blue-200/50;
   }
 
   @keyframes nav-shadown {
