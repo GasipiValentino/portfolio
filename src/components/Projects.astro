@@ -9,121 +9,129 @@ import Vue from "./icons/Vue.astro"
 import Bootstrap from "./icons/Bootstrap.astro"
 import Vuetify from "./icons/Vuetify.astro"
 
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 
 const TAGS = {
   TAILWIND: {
     name: "Tailwind CSS",
-    class: "bg-[#2C696B] text-white",
+    class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
     icon: Tailwind,
   },
   LARAVEL: {
     name: "Laravel",
-    class: "bg-[#2C696B] text-white",
+    class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
     icon: Laravel,
   },
   JAVASCRIPT: {
     name: "JavaScript",
-    class: "bg-[#2C696B] text-white",
+    class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
     icon: JavaScript,
   },
   VUE: {
     name: "Vue",
-    class: "bg-[#2C696B] text-white",
+    class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
     icon: Vue,
   },
   BOOTSTRAP: {
     name: "Bootstrap CSS",
-    class: "bg-[#2C696B] text-white",
+    class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
     icon: Bootstrap,
   },
   VUETIFY: {
     name: "Vuetify",
-    class: "bg-[#2C696B] text-white",
+    class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
     icon: Vuetify,
   }
 }
 const PROJECTS = [
   {
-    title: "'Old Money' - A Laravel Project",
-    description:
-      "This project is an E-commerce platform built with Laravel, and Tailwind CSS. It uses Eloquent ORM for the management of the databse. It has a shopping cart, checkout, and admin panel, in which you can manage products, orders, and users.",
+    title: 'project.old-money.title',
+    description: 'project.old-money.description',
     link: "#",
     github: "https://github.com/GasipiValentino/old-money",
     image: "/projects/old-money.jpg",
-    button: "Soon...",
+    button: 'project.old-money.link',
+    buttonGithub: 'project.old-money.github',
     tags: [TAGS.LARAVEL, TAGS.TAILWIND],
   },
   {
-    title: "'De Película' - A Vue Project",
-    description:
-      "This project uses the Vue framework and Vuetify for the UI. It consumes the TMDB API to show the latest movies, and TV shows. It has a search bar, and a detail page for each movie. You can also add them to favorites and filter by popularity.",
+    title: 'project.de-pelicula.title',
+    description: 'project.de-pelicula.description',
     link: "https://peliculas-rho.vercel.app/",
     github: "https://github.com/GasipiValentino/peliculas-vue",
     image: "/projects/de-pelicula.jpg",
-    button: "Preview",
+    button: 'project.de-pelicula.link',
+    buttonGithub: 'project.de-pelicula.github',
     tags: [TAGS.VUE, TAGS.VUETIFY],
   },
   {
-    title: "'JS Cart' - A JavaScript Project",
-    description:
-      "This project aims to model and understand how a shopping cart works. A sneaker e-commerce was created using only Vanilla JavaScript for DOM event handling. The page is characterized by its dynamic loading.",
+    title: 'project.js-cart.title',
+    description: 'project.js-cart.description',
     link: "gasipivalentino.github.io/cart-js/",
     github: "https://github.com/GasipiValentino/cart-js",
     image: "/projects/js-cart.jpg",
-    button: "Preview",
+    button: 'project.js-cart.link',
+    buttonGithub: 'project.js-cart.github',
     tags: [TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
-  }
-]
+  },
+];
+
 ---
 
 <div class="flex flex-col gap-y-16 ">
   {
-    PROJECTS.map(({ image, title, description, tags, link, github, button }) => (
-    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-  <div class="w-full md:w-1/2">
-    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
-    </div>
-  </div>
+    PROJECTS.map(({ image, title, description, tags, link, github, button, buttonGithub }) => (
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img alt="Project Image" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+          </div>
+        </div>
 
-  <div class="w-full md:w-1/2 md:max-w-xl">
-    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-      {title}
-    </h3>
-    <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
-          {tags.map((tag) => (
-            <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-              >
-                <tag.icon class="size-4" />
-                {tag.name}
-              </span>
-            </li>
-          ))}
-        </ul>
-
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
-      <footer class="flex items-end justify-start mt-4 gap-x-4">
-          {github && (
-            <LinkButton href={github}>
-              <GitHub class="size-6" />
-              Code
-            </LinkButton>
-          )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              {button}
-            </LinkButton>
-          )}
-        </footer>
-    </div>
-  </div>
-</article>
+        <div class="w-full md:w-1/2 md:max-w-xl">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {t(title)}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <div class="mt-2 text-gray-700 dark:text-gray-400">
+              {t(description)} 
+            </div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github && (
+                <LinkButton href={github}>
+                  <GitHub class="size-6" />
+                  {t(buttonGithub)}
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  {t(button)}
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
     ))
   }
 </div>
+
 
 
