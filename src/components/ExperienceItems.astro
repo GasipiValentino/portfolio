@@ -1,13 +1,9 @@
 ---
  interface Props {
-  title: string;
-  date: string;
-  description: string;
   link: string;
-  badge: string;
 }
 
-const {title, date, description, link, badge} = Astro.props
+const {link} = Astro.props
 
 import BadgeExperience from './BadgeExperience.astro'
 import { getLangFromUrl, useTranslations } from '../i18n/utils';

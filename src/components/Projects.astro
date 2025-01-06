@@ -49,33 +49,33 @@ const TAGS = {
 }
 const PROJECTS = [
   {
-    title: 'project.old-money.title',
-    description: 'project.old-money.description',
+    title: t('project.old-money.title'),
+    description: t('project.old-money.description'),
     link: "#",
     github: "https://github.com/GasipiValentino/old-money",
     image: "/projects/old-money.jpg",
-    button: 'project.old-money.link',
-    buttonGithub: 'project.old-money.github',
+    button: t('project.old-money.link'),
+    buttonGithub: t('project.old-money.github'),
     tags: [TAGS.LARAVEL, TAGS.TAILWIND],
   },
   {
-    title: 'project.de-pelicula.title',
-    description: 'project.de-pelicula.description',
+    title: t('project.de-pelicula.title'),
+    description: t('project.de-pelicula.description'),
     link: "https://peliculas-rho.vercel.app/",
     github: "https://github.com/GasipiValentino/peliculas-vue",
     image: "/projects/de-pelicula.jpg",
-    button: 'project.de-pelicula.link',
-    buttonGithub: 'project.de-pelicula.github',
+    button: t('project.de-pelicula.link'),
+    buttonGithub: t('project.de-pelicula.github'),
     tags: [TAGS.VUE, TAGS.VUETIFY],
   },
   {
-    title: 'project.js-cart.title',
-    description: 'project.js-cart.description',
+    title: t('project.js-cart.title'),
+    description: t('project.js-cart.description'),
     link: "gasipivalentino.github.io/cart-js/",
     github: "https://github.com/GasipiValentino/cart-js",
     image: "/projects/js-cart.jpg",
-    button: 'project.js-cart.link',
-    buttonGithub: 'project.js-cart.github',
+    button: t('project.js-cart.link'),
+    buttonGithub: t('project.js-cart.github'),
     tags: [TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
   },
 ];
@@ -94,7 +94,7 @@ const PROJECTS = [
 
         <div class="w-full md:w-1/2 md:max-w-xl">
           <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-            {t(title)}
+            {title}
           </h3>
           <div class="flex flex-wrap mt-2">
             <ul class="flex flex-row mb-2 gap-x-2">
@@ -110,19 +110,19 @@ const PROJECTS = [
               ))}
             </ul>
             <div class="mt-2 text-gray-700 dark:text-gray-400">
-              {t(description)} 
+              {description} 
             </div>
             <footer class="flex items-end justify-start mt-4 gap-x-4">
               {github && (
                 <LinkButton href={github}>
                   <GitHub class="size-6" />
-                  {t(buttonGithub)}
+                  {buttonGithub}
                 </LinkButton>
               )}
               {link && (
                 <LinkButton href={link}>
                   <Link class="size-4" />
-                  {t(button)}
+                  {button}
                 </LinkButton>
               )}
             </footer>
