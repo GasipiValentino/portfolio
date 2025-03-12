@@ -42,7 +42,7 @@ Welcome to my portfolio! This project is a showcase of my skills, experience, an
 - **Framework**: [Astro](https://astro.build/)
 - **Frontend**: [TailwindCSS](https://tailwindcss.com/)
 - **Localization**: Custom i18n setup
-- **Hosting**: [Netlify](https://www.netlify.com/) 
+- **Hosting**: [Vercel](https://www.vercel.com/) 
 
 ---
 
