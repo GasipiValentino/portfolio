@@ -18,9 +18,9 @@ const lang = getLangFromUrl(Astro.url);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<ul class="flex">
+<ul class="flex bg-violet-600 p-4 rounded-full gap-2">
   {Object.entries(LANGUAGES).map(([languageCode, { icon: Icon }]) => (
-    <li class="ml-4">
+    <li>
       <a
         href={translatePath('/', languageCode)}
         class={`block hover:scale-110 transition rounded`}

@@ -2,6 +2,6 @@
 const { id } = Astro.props
 ---
 
-<section id={id} data-section={id} class="w-11/12 lg:w-[780px] mx-auto py-12">
+<section id={id} data-section={id} class="w-11/12 lg:w-[780px] mx-auto py-12 {...Astro.props}">
     <slot/>
 </section>
