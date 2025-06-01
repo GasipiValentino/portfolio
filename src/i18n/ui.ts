@@ -30,7 +30,7 @@ export const languages = {
       'project.statify.description': 'Esta aplicación te da la posibilidad de ver tus artistas, canciones y géneros más escuchados en diferentes períodos de tiempo. Descubre tendencias en tu historial de escucha y compara tus estadísticas con las de tus amigos.',
 
       'project.vecinos.title': 'Vecinos Conectados - Diseño UI/UX',
-'project.vecinos.description': 'Aplicación móvil diseñada en Figma para mejorar la convivencia vecinal. Desarrollo de marca completo (moodboards, UI Kit, user flows). Incluye prototipos interactivos, testeos de usabilidad y un panel de métricas de conflictos resueltos.',
+      'project.vecinos.description': 'Aplicación móvil diseñada en Figma para mejorar la convivencia vecinal. Incluye diferentes funcionalidades como enviar alertas a un vecino, reservas amenities, entre otras. Para la misma se desarrolló la marca completa (moodboards, UI Kit, userflows).',
 
       'project.statify.github': 'Código',
       'project.statify.link': 'Ver Proyecto',
@@ -88,7 +88,7 @@ export const languages = {
         'project.vecinos.link': 'View prototype',
         
         'project.vecinos.title': 'Connected Neighbors - UI/UX Design',
-        'project.vecinos.description': 'Mobile app designed in Figma to enhance neighborhood relations. Full brand development (moodboards, UI Kit, user flows). Features interactive prototypes, usability testing, and a conflict resolution metrics dashboard.',
+        'project.vecinos.description': 'Figma-designed mobile app for neighborhood relations, featuring neighbor alerts, amenity bookings, and other functions. Included full brand development (moodboards, UI Kit, userflows).',
 
         'p1': 'My name is Valentino.',
         'strong1': ' With a degree in Web Design and Programming,',
