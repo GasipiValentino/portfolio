@@ -9,6 +9,7 @@ import Vue from "./icons/Vue.astro"
 import Bootstrap from "./icons/Bootstrap.astro"
 import Vuetify from "./icons/Vuetify.astro"
 import Typescript from "./icons/Typescript.astro"
+import Figma from "./icons/Figma.astro"
 
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
@@ -47,6 +48,11 @@ const TAGS = {
     class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
     icon: Vuetify,
   },
+  FIGMA: {
+    name: "Figma",
+    class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
+    icon: Figma,
+  },
   TYPESCRIPT: {
     name: "Typescript",
     class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
@@ -54,6 +60,14 @@ const TAGS = {
   }
 }
 const PROJECTS = [
+  {
+    title: t('project.vecinos.title'),
+    description: t('project.vecinos.description'),
+    link: "https://www.figma.com/proto/FTcMmfTP5qP062AOyUxuRt/Prototipo-Vecinos-Conectados?node-id=184-8454&node-type=frame&t=L5LWLQuvo5T1EQtK-0&scaling=scale-down&content-scaling=fixed&page-id=3%3A2&starting-point-node-id=184%3A8454",
+    image: "/projects/vecinos.jpg",
+    button: t('project.vecinos.link'),
+    tags: [TAGS.FIGMA],
+  },
   {
     title: t('project.old-money.title'),
     description: t('project.old-money.description'),

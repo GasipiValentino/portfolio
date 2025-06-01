@@ -28,6 +28,10 @@ export const languages = {
       'project.js-cart.description': 'Este proyecto busca modelar y entender cómo funciona un carrito de compras. Se creó un e-commerce de zapatillas utilizando solo JavaScript Vanilla para el manejo de eventos del DOM. La página se caracteriza por su carga dinámica.',
       'project.statify.title': 'Statify - Spotify API',
       'project.statify.description': 'Esta aplicación te da la posibilidad de ver tus artistas, canciones y géneros más escuchados en diferentes períodos de tiempo. Descubre tendencias en tu historial de escucha y compara tus estadísticas con las de tus amigos.',
+
+      'project.vecinos.title': 'Vecinos Conectados - Diseño UI/UX',
+'project.vecinos.description': 'Aplicación móvil diseñada en Figma para mejorar la convivencia vecinal. Desarrollo de marca completo (moodboards, UI Kit, user flows). Incluye prototipos interactivos, testeos de usabilidad y un panel de métricas de conflictos resueltos.',
+
       'project.statify.github': 'Código',
       'project.statify.link': 'Ver Proyecto',
       'project.old-money.github': 'Código',
@@ -36,6 +40,9 @@ export const languages = {
       'project.de-pelicula.link': 'Ver proyecto',
       'project.js-cart.github': 'Código',
       'project.js-cart.link': 'Ver proyecto',
+
+      'project.vecinos.link': 'Ver prototipo',
+
       'p1': 'Mi nombre es Valentino. ',
       'strong1': 'Con un grado en Diseño y Programación Web,',
       'p2': " estuve los últimos 2 años trabajando en proyectos que van desde sitios web de pequeñas empresas hasta aplicaciones web interactivas. Mi viaje comenzó con una simple curiosidad sobre cómo funcionan los sitios web, que se convirtió en una carrera",
@@ -77,6 +84,11 @@ export const languages = {
         'project.de-pelicula.link': 'View project',
         'project.js-cart.github': 'Code',
         'project.js-cart.link': 'View project',
+
+        'project.vecinos.link': 'View prototype',
+        
+        'project.vecinos.title': 'Connected Neighbors - UI/UX Design',
+        'project.vecinos.description': 'Mobile app designed in Figma to enhance neighborhood relations. Full brand development (moodboards, UI Kit, user flows). Features interactive prototypes, usability testing, and a conflict resolution metrics dashboard.',
 
         'p1': 'My name is Valentino.',
         'strong1': ' With a degree in Web Design and Programming,',
