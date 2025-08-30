@@ -10,6 +10,7 @@ import Bootstrap from "./icons/Bootstrap.astro"
 import Vuetify from "./icons/Vuetify.astro"
 import Typescript from "./icons/Typescript.astro"
 import Figma from "./icons/Figma.astro"
+import Firebase from "./icons/Firebase.astro"
 
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
@@ -53,6 +54,11 @@ const TAGS = {
     class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
     icon: Figma,
   },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
+    icon: Firebase,
+  },
   TYPESCRIPT: {
     name: "Typescript",
     class: "bg-blue-300/30 text-black dark:text-white dark:bg-blue-400/30",
@@ -60,6 +66,14 @@ const TAGS = {
   }
 }
 const PROJECTS = [
+  {
+    title: t('project.reemo.title'),
+    description: t('project.reemo.description'),
+    link: "https://reemo-a8120.web.app/",
+    image: "/projects/reemo.png",
+    button: t('project.reemo.link'),
+    tags: [TAGS.VUE, TAGS.FIREBASE,TAGS.TAILWIND ],
+  },
   {
     title: t('project.vecinos.title'),
     description: t('project.vecinos.description'),
