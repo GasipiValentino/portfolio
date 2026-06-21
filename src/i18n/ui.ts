@@ -11,16 +11,18 @@ export const languages = {
       'nav.home': 'Inicio',
       'nav.experience': 'Experiencia',
       'nav.projects': 'Proyectos',
+      'nav.skills': 'Skills',
       'nav.about-me': 'Sobre Mi',
       'nav.contact': 'Contacto',
+      
 
       'footer.about-me': 'Sobre Mi',
       'footer.contact': 'Contacto',
 
-      'experience.title': 'Mancruz - Dogos de Burdeos',
+      'experience.title': 'Freelance Web Developer · Mancruz',
       'experience.label': 'Última experiencia',
       'experience.date': 'Febrero 2024',
-      'experience.description': 'Esta es mi primera y única experiencia laboral hasta el momento. Es un sitio web para un criador de perros. Es un sitio web simple con mucha información sobre la raza y los perros. Es un sitio web estático construido con HTML, CSS, algo de JS y Bootstrap.',
+      'experience.description': 'Diseñé y desarrollé el sitio web para un criador de perros Dogos de Burdeos. Sitio estático con información detallada sobre la raza, galería de perros y datos de contacto, construido con HTML, CSS, JavaScript y Bootstrap. Entregué el proyecto en 2 semanas y el cliente lo usa activamente.',
       'experience.button': 'Ver proyecto',
 
       'project.old-money.title': 'Old Money - Proyecto de Laravel',
@@ -39,7 +41,7 @@ export const languages = {
       'project.js-cart.link': 'Ver proyecto',
       
       'project.statify.title': 'Statify - Spotify API',
-      'project.statify.description': 'Esta aplicación te da la posibilidad de ver tus artistas, canciones y géneros más escuchados en diferentes períodos de tiempo. Descubre tendencias en tu historial de escucha y compara tus estadísticas con las de tus amigos.',
+      'project.statify.description': 'Desarrollada con TypeScript e integración con la API de Spotify mediante OAuth 2.0 para acceder a datos privados del usuario. Explorá tus artistas, canciones y géneros más escuchados en distintos períodos de tiempo y compartí tus estadísticas con amigos.',
       'project.statify.github': 'Código',
       'project.statify.link': 'Ver Proyecto',
 
@@ -48,12 +50,12 @@ export const languages = {
       'project.vecinos.link': 'Ver prototipo',
 
       'project.reemo.title': 'Reemo - Plataforma de alquiler de vehículos',
-      'project.reemo.description': 'Aplicación web desarrollada como proyecto personal que permite a los usuarios alquilar vehículos de manera rápida y segura. La plataforma incluye funciones como registro e inicio de sesión de usuarios, gestión de autos disponibles, solicitudes de alquiler y seguimiento de vehículos arrendados.',
+      'project.reemo.description': 'Aplicación web full-stack construida con Vue 3 y Firebase con sincronización de datos en tiempo real. Incluye autenticación de usuarios, catálogo de vehículos con disponibilidad dinámica, flujo de solicitudes de alquiler y panel de gestión de arriendos activos — desplegada en producción.',
       'project.reemo.link': 'Ver Proyecto',
 
       'p1': 'Mi nombre es Valentino. ',
       'strong1': 'Con un grado en Diseño y Programación Web,',
-      'p2': " estuve los últimos 2 años trabajando en proyectos que van desde sitios web de pequeñas empresas hasta aplicaciones web interactivas. Mi viaje comenzó con una simple curiosidad sobre cómo funcionan los sitios web, que se convirtió en una carrera",
+      'p2': " estuve los últimos 3 años trabajando en proyectos que van desde sitios web de pequeñas empresas hasta aplicaciones web interactivas. Mi viaje comenzó con una simple curiosidad sobre cómo funcionan los sitios web, que se convirtió en una carrera",
       'strong2': 'que de verdad disfruto.',
       'p3': 'Con el paso de los años, he perfeccionado mi experiencia en la creación ',
       'strong3': 'de diseños centrados en el usuario (UX) y escribiendo código limpio y eficiente.',
@@ -67,16 +69,17 @@ export const languages = {
         'nav.home': 'Home',
         'nav.experience': 'Experience',
         'nav.projects': 'Projects',
+        'nav.skills': 'Skills',
         'nav.about-me': 'About Me',
         'nav.contact': 'Contact',
 
         'footer.about-me': 'About Me',
         'footer.contact': 'Contact',
 
-        'experience.title': 'Mancruz - Burdeos Dogos',
+        'experience.title': 'Freelance Web Developer · Mancruz',
         'experience.label': 'Last experience',
         'experience.date': 'February 2024',
-        'experience.description': 'This is my first and unique work experience at the moment. It is a website for a dog breeder. It is a simple website with a lot of information about the breed and the dogs. It is a static website built with HTML, CSS, some JS and Bootstrap.',
+        'experience.description': 'Designed and developed a website for a Dogo Argentino breeder, featuring breed information, a dog gallery, and contact details. Built with HTML, CSS, JavaScript, and Bootstrap. Delivered the full project in 2 weeks — the client actively uses it today.',
         'experience.button': 'View project',
 
         'project.old-money.title': 'Old Money - Laravel Project',
@@ -95,7 +98,7 @@ export const languages = {
         'project.js-cart.link': 'View project',
         
         'project.statify.title': 'Statify - Spotify API',
-        'project.statify.description': 'This app gives you the possibility to check out your most listened-to artists, tracks, and genres over different time periods. Discover trends in your listening history, and compare your stats with friends!',
+        'project.statify.description': 'Built with TypeScript and the Spotify Web API, implementing OAuth 2.0 to access private user data. Explore your top artists, tracks, and genres across short, medium, and long-term periods — then compare your listening stats with friends.',
         'project.statify.github': 'Code',
         'project.statify.link': 'View Project',
         
@@ -104,13 +107,13 @@ export const languages = {
         'project.vecinos.link': 'View prototype',
 
         'project.reemo.title': 'Reemo – Vehicle Rental Platform',
-        'project.reemo.description': 'A web application developed as a personal project that allows users to rent vehicles quickly and safely. The platform includes features such as user registration and login, available car management, rental requests, and tracking of rented vehicles.',
+        'project.reemo.description': 'Full-stack web app built with Vue 3 and Firebase featuring real-time data sync. Includes authentication, a vehicle catalog with dynamic availability, rental request workflows, and a dashboard to manage active rentals — deployed to production.',
         // 'project.reemo.github': 'Code',
         'project.reemo.link': 'View Project',
         
         'p1': 'My name is Valentino.',
         'strong1': ' With a degree in Web Design and Programming,',
-        'p2': " I've spent the past 2 years working on projects ranging from small business websites to interactive web applications. My journey began with a simple curiosity about how websites work, which grew into a career",
+        'p2': " I've spent the past 3 years working on projects ranging from small business websites to interactive web applications. My journey began with a simple curiosity about how websites work, which grew into a career",
         'strong2': 'that I truly enjoy.',
         'p3': "Over the years, I've honed my expertise in creating ",
         'strong3': 'user-centric designs and writing clean, efficient code.',

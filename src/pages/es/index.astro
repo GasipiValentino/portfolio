@@ -14,9 +14,10 @@ import  Code  from '../../components/icons/Code.astro';
 import SectionTitle from '../../components/SectionTitle.astro';
 import About from '../../components/icons/About.astro';
 import AboutMe from '../../components/AboutMe.astro';
+import Skills from '../../components/Skills.astro';
 ---
 
-<Layout title="Porfolio de Valentino Gasipi - Desarrollador y Programador Web con 2 años de experiencia" description="2 years designing and developing websites while continuously learning new technologies. I focus on providing modern and responsive (mobile-first) designs.">
+<Layout title="Porfolio de Valentino Gasipi - Desarrollador y Programador Web con 3 años de experiencia" description="3 años diseñando y programando páginas web mientras aprendo, constantemente, nuevas tecnologías. Me centro en la creación de diseños modernos y responsivos (mobile-first).">
 	<main>
 		<SectionContainer id="home/">
 		<div class="flex flex-row items-center gap-4 mb-4">
@@ -29,7 +30,7 @@ import AboutMe from '../../components/AboutMe.astro';
 		<h1 class="text-4xl font-semibold text-gray-800 sm:text-5xl dark:text-white mb-8">
     		Hola, soy Valentino 
   		</h1>
-		<h2 class="text-xl md:text-2xl text-wrap"><span class="text-blue-600 dark:text-blue-300">2 años</span> 
+		<h2 class="text-xl md:text-2xl text-wrap"><span class="text-blue-600 dark:text-blue-300">3 años</span>
 		<span class="text-black dark:opacity-80 dark:text-white">diseñando y programando páginas web mientras aprendo, constantemente, nuevas tecnologías. Me centro en la creación</span> <span class="text-blue-600 dark:text-blue-300 opacity-100">de diseños modernos y responsivos (mobile-first).</span>
 		</h2>
 
@@ -62,6 +63,13 @@ import AboutMe from '../../components/AboutMe.astro';
 				<Suitcase class=""/>
 				Experiencia Laboral</SectionTitle>
 			<Experience/>
+		</SectionContainer>
+
+		<SectionContainer id="skills/">
+			<SectionTitle>
+				<Code class="size-6"/>
+				Stack Tecnológico</SectionTitle>
+				<Skills/>
 		</SectionContainer>
 
 		<SectionContainer id="projects/">
